@@ -1,0 +1,106 @@
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    background-color: transparent;
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+
+.displayModal {
+    display: block;
+}
+
+.hideModal {
+    display: none;
+}
+
+.login-sign-up-modal {
+    display: none;
+    border: 1px solid lightgrey;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 35px;
+}
+
+
+.login-close, .register-close {
+    cursor: pointer;
+}
+
+#sign-up-modal {
+    width: 70%;
+}
+#sign-up-modal .left-col h1 {
+    padding: 35px 0;
+    font-weight: 700;
+}
+.left-col p {
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.login-sign-up-modal-header,
+.login-sign-up-modal-body,
+.login-sign-up-email-footer {
+    padding: 10px 0;
+}
+
+.login-sign-up-modal-header h1 {
+    font-weight: 800;
+}
+
+.login-sign-up-email, .login-sign-up-password, .login-sign-up-submit {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-sign-up-email, .login-sign-up-password {
+    background-color:  transparent;
+  }
+
+.login-sign-up-submit, .login-sign-up-create-account {
+    border: 1px solid transparent;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    color: white;
+    background-color: #DA3928;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+}
+
+.login-sign-up-submit:hover, .login-sign-up-submit:focus, .login-sign-up-submit:active {
+    /* padding: 14px; */
+    background-color: #DA3928;
+    color: white;
+    /* border: 1px solid; */
+    /* border-color: #DA3928; */
+}
+
+.login-sign-up-modal-footer {
+    padding: 30px 0;
+    border-top: 1px solid lightgray;
+}
+
+.login-sign-up-create-account {
+    margin: 25px 0 -18px 0px;
+    background-color: white;
+    border: 3px solid rgb(56, 56, 56);
+    width: 100%;
+    color: rgb(56, 56, 56);
+}

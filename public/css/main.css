@@ -1,0 +1,115 @@
+.user-welcome-message {
+    border-radius: 5px;;
+    border: 1px solid lightgray;
+    padding: 30px;
+    margin: 15px;
+}
+
+.user-welcome-message h3 {
+    font-weight: 700;
+}
+
+.user-welcome-message p {
+    padding: 8px 0;
+    font-weight: 600;
+}
+
+.user-welcome-message p button {
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 8px 40px!important;
+}
+
+#top-user-images, #popular-searches {
+    margin: 15px auto;
+}
+
+.top-user-image-inner-container {
+    position: relative;
+}
+
+
+.top-user-image-inner-container img:nth-child(1) {
+    width: 100%;
+    height: 250px;
+}
+
+.top-user-image-inner-container img:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    border-radius: 50%;
+    border: 4px solid white;
+    transform: translate(-50%);
+}
+
+.curated-collections-heading,
+.popular-searches-heading {
+    font-weight: 900;
+    padding-left: 15px;
+}
+
+.curated-collections-image-inside-container,
+.popular-searches-image-inside-container {
+    position: relative;
+    padding: 10px;
+}
+
+.curated-collections-image-inside-container div,
+.popular-searches-image-inside-container div {
+    cursor: pointer;
+    position: relative;
+}
+
+.curated-collections-image-inside-container p,
+.popular-searches-image-inside-container p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 99;
+
+}
+
+.curated-collections-image-inside-container img {
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+
+.curated-collections-image-inside-container div::before,
+.popular-searches-image-inside-container div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 99;
+    opacity: 0.7;
+    transition: all 0.4s ease;
+    transition-delay: 0.2s;
+}
+
+.curated-collections-image-inside-container div:hover::before {
+    opacity: 0.5;
+}
+
+.popular-searches-image-inside-container div:hover::before {
+    opacity: 0.5;
+}
+
+
+.popular-searches-image-inside-container {
+    padding: 10px;
+}
+
+.popular-searches-image-inside-container img {
+    height: 300px;
+    width: 100%;
+}
