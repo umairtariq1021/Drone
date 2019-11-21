@@ -24,3 +24,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/image-photo/{id}','User\ImageController@details');
+Route::get('/about', 'AboutController@about');
+Route::get('/contact', 'ContactController@contact');

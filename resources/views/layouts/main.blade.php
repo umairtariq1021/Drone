@@ -18,6 +18,7 @@
     <link href="{{ asset('css/modal.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
 </head>
 <body>
     <div id="app">
@@ -43,7 +44,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                      <li class="nav-item">
+                                <a class="nav-link {{Request::is('/') ? 'active' : ''}}" id="home" href="/">Home</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link {{Request::is('about') ? 'active' : ''}}" id="about" href="/about">About</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link {{Request::is('contact') ? 'active' : ''}}" id="contact" href="/contact">Contact</a>
+                            </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
